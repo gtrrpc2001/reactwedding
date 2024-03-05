@@ -23,13 +23,9 @@ export const Layout = () => {
     }, []);
     
     return (
-        <Box sx={{width:width,height:height}}>
-            <Snowfall />
-            <Box sx={{display:'flex',justifyContent:'center'}} >
-                <Box sx={{width:width/2,height:height/2,border:5,bgcolor:'background.paper'}}>
-                <img src={image1} style={{width:`${width/3}px`,height:`${height/2}px`}}/>
-                    {/* <Gallery/> */}
-                </Box>
+        <Box sx={{width:width,height:height}}>            
+            <Box sx={{display:'flex',justifyContent:'center'}} >                
+                <Gallery width={width/2} height={height/3} borderRadius={15}/>                
             </Box>
             {/* <header style={{ height: 800, width: 1000 }}>                
                 

@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { imageList } from '../model/images';
 
-export const Gallery = () => {
+type props = {
+    width:number
+    height:number
+    borderRadius:number
+}
+export const Gallery = ({width,height,borderRadius}:props) => {
     const [moveIndex, setMoveIndex] = useState(0);
     const imageItems = imageList
 
@@ -21,7 +26,7 @@ export const Gallery = () => {
       return (
         <div>
           {/* 선택된 이미지를 표시 */}
-          <img src={imageItems[moveIndex]} alt="Gallery"/>
+          <img src={imageItems[moveIndex]} alt="Gallery" style={{width:`${width}px`,height:`${height}px`,borderRadius:borderRadius}}/>
         </div>
       );
 }
