@@ -31,14 +31,11 @@ function App() {
 
   return (     
     <>
-      <Snowfall />
+        <Snowfall />
         <Routes>
-          <Route path='/' element={<Layout/>}>
-            <Route path='main' element={<Main/>}/>
-          </Route>
+          <Route path='/' element={<Layout/>}/>                      
           <Route path='*' element={<Navigate to={"/"} replace={true}/>}/>
-        </Routes>
-      <Footer/>  
+        </Routes>        
     </> 
   );
 }
