@@ -1,8 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
-import  Snowfall  from "../component/snowfall";
 import { Gallery } from "../gallery/gallery";
 import { Box } from '@mui/material'
-import image1 from '../asset/images/1.jpg'
 import { useEffect, useState } from "react";
 import { Footer } from "../footer/footer";
 import { Main } from "../main/main";
