@@ -4,6 +4,7 @@ import { Layout } from './layout/layout';
 import { Main } from './main/main';
 import './App.css'
 import Snowfall from './component/snowfall';
+import { Footer } from './footer/footer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,12 +32,13 @@ function App() {
   return (     
     <>
       <Snowfall />
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-          <Route path='main' element={<Main/>}/>
-        </Route>
-        <Route path='*' element={<Navigate to={"/"} replace={true}/>}/>
-      </Routes>      
+        <Routes>
+          <Route path='/' element={<Layout/>}>
+            <Route path='main' element={<Main/>}/>
+          </Route>
+          <Route path='*' element={<Navigate to={"/"} replace={true}/>}/>
+        </Routes>
+      <Footer/>  
     </> 
   );
 }
