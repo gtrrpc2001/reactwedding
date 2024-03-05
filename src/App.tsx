@@ -21,7 +21,11 @@ function App() {
     );
   }
 
+<<<<<<< HEAD
   return (      
+=======
+  return ( 
+>>>>>>> 6e41060baed619c2b3cf405ae3cc051f80c15e8f
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route path='main' element={<Main/>}/>
