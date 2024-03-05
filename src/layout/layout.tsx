@@ -1,10 +1,6 @@
-import { useContext } from "react";
-
-import { SettingsContext } from "../context/snowSetting";
 import  Snowfall  from "../component/snowfall";
 
 export const Layout = () => {
-    const settings = useContext(SettingsContext)
     return (
         <div style={{background: '#282c34'}}>
         <Snowfall />
