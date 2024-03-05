@@ -25,12 +25,8 @@ export const Layout = () => {
     
     return (
         <Box sx={{width:width,height:height}}>            
-            <Box sx={{display:'flex',justifyContent:'center'}} >                
-<<<<<<< HEAD
-                <Gallery width={width/2} height={height/3} borderRadius={15}/>                
-=======
+            <Box sx={{display:'flex',justifyContent:'center'}} >  
                 <Gallery width={width/2} height={height/3} borderRadius={15}/>  
->>>>>>> dac3a3702da665c6507fb3767142ee6028d75d1f
             </Box>
             {/* <header style={{ height: 800, width: 1000 }}>                
                 
