@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './layout/layout';
-import { Main } from './main/main';
 import './App.css'
 import Snowfall from './component/snowfall';
-import { Footer } from './footer/footer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

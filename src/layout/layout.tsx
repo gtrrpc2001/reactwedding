@@ -6,6 +6,7 @@ import image1 from '../asset/images/1.jpg'
 import { useEffect, useState } from "react";
 import { Footer } from "../footer/footer";
 import { Main } from "../main/main";
+import { Welcome } from "../welcome/welcome";
 
 export const Layout = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -27,9 +28,14 @@ export const Layout = () => {
     return (
         <Box sx={{width:width,height:height}}>            
             <Box sx={{display:'flex',justifyContent:'center'}} >                
-                <Gallery width={width/2} height={height/3} borderRadius={15}/>                
+                <Welcome width={width} height={height}/>
+                {/* <Gallery width={width/2} height={height/3} borderRadius={15}/>                 */}                
             </Box>
-            <Main width={width} height={height*0.5}/>
+            <div style={{width:width,height:height*0.2}}>
+
+            </div>
+
+            {/* <Main width={width} height={height*0.5}/> */}
             <Footer/>
         </Box>
     );

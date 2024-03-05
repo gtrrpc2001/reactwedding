@@ -21,7 +21,7 @@ export const Gallery = ({width,height,borderRadius}:props) => {
           });
         }, 3000);
         return () => clearInterval(timer);
-      }, []);
+      }, [imageItems.length]);
 
       return (
         <div>
