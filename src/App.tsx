@@ -27,11 +27,7 @@ function App() {
     );
   }
 
-<<<<<<< HEAD
   return (      
-=======
-  return (    
->>>>>>> 1a1ce2a2d6ab2dece5a3a49f81d46e53022ad913
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route path='main' element={<Main/>}/>

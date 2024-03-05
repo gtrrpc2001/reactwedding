@@ -3,17 +3,30 @@ import  Snowfall  from "../component/snowfall";
 import { Gallery } from "../gallery/gallery";
 import { Box } from '@mui/material'
 import image1 from '../asset/images/1.jpg'
+import { useEffect, useState } from "react";
 
 export const Layout = () => {
-<<<<<<< HEAD
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     
-=======
->>>>>>> 1a1ce2a2d6ab2dece5a3a49f81d46e53022ad913
     return (
-        <Box sx={{width:'auto',height:'auto'}}>
+        <Box sx={{width:width,height:height}}>
             <Snowfall />
-            <Box sx={{display:'flex',position:'absolute',left:700,top:200}} >
-                <Box sx={{width:500,height:500,border:5,bgcolor:'background.paper'}}>
+            <Box sx={{display:'flex',justifyContent:'center'}} >
+                <Box sx={{width:width/2,height:height/2,border:5,bgcolor:'background.paper'}}>
                 <img src={image1}/>
                     {/* <Gallery/> */}
                 </Box>
