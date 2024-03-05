@@ -5,7 +5,10 @@ import { Box } from '@mui/material'
 import image1 from '../asset/images/1.jpg'
 
 export const Layout = () => {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 1a1ce2a2d6ab2dece5a3a49f81d46e53022ad913
     return (
         <Box sx={{width:'auto',height:'auto'}}>
             <Snowfall />
