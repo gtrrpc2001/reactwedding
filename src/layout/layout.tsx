@@ -1,7 +1,10 @@
 import  Snowfall  from "../component/snowfall";
 
 export const Layout = () => {
+<<<<<<< HEAD
     
+=======
+>>>>>>> f285dd438a516812863dd8024f21555f224041ec
     return (
         <div style={{}}>
         <Snowfall />
