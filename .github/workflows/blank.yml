@@ -1,0 +1,37 @@
+# This is a basic workflow to help you get started with Actions
+
+name: reactwedding
+on:
+  push:
+    branches: 
+      - main
+jobs:  
+  build:    
+    runs-on: ubuntu-latest    
+    env:
+      my_secret: ${{secrets.ADDRESS}}
+      
+    steps:      
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '20'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        run: |
+          cd build
+          git init
+          git config --global user.email cbdgjs3548@naver.com
+          git config --global user.name gtrrpc2001
+          git status
+          git remote add origin https://${{secrets.TOKEN_CODE}}@github.com/gtrrpc2001/reactwedding.git          
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "update"
+          git push origin gh-pages -f
+          
