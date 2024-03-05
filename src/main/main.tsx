@@ -1,5 +1,3 @@
-import { Gallery } from "../gallery/gallery";
-
 type props={
     width:number
     height:number
