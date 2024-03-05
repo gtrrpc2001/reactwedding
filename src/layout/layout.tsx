@@ -6,7 +6,6 @@ import image1 from '../asset/images/1.jpg'
 import { useEffect, useState } from "react";
 
 export const Layout = () => {
-<<<<<<< HEAD
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
 
@@ -23,8 +22,6 @@ export const Layout = () => {
       };
     }, []);
     
-=======
->>>>>>> 631a97d5d4d564e432fad8f12b88919ccb106c8f
     return (
         <Box sx={{width:width,height:height}}>
             <Snowfall />
