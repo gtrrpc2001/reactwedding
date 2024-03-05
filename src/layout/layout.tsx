@@ -6,7 +6,6 @@ import image1 from '../asset/images/1.jpg'
 import { useEffect, useState } from "react";
 
 export const Layout = () => {
-<<<<<<< HEAD
     const [width, setWidth] = useState(window.innerWidth);
     const [height, setHeight] = useState(window.innerHeight);
 
@@ -23,14 +22,12 @@ export const Layout = () => {
       };
     }, []);
     
-=======
->>>>>>> 631a97d5d4d564e432fad8f12b88919ccb106c8f
     return (
         <Box sx={{width:width,height:height}}>
             <Snowfall />
             <Box sx={{display:'flex',justifyContent:'center'}} >
                 <Box sx={{width:width/2,height:height/2,border:5,bgcolor:'background.paper'}}>
-                <img src={image1}/>
+                <img src={image1} style={{width:`${width/3}px`,height:`${height/2}px`}}/>
                     {/* <Gallery/> */}
                 </Box>
             </Box>
