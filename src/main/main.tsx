@@ -7,8 +7,7 @@ type props={
 
 export const Main = ({width,height}:props) => {
     return (
-        <main style={{width:width,height:height}}>            
-            {/* <Gallery/> */}
+        <main style={{width:width,height:height}}>  
         </main>
     );
 }
