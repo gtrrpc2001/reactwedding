@@ -24,11 +24,11 @@ jobs:
         run: npm run build
       - name: Deploy
         run: |
-          git init
           git config --global user.email cbdgjs3548@naver.com
           git config --global user.name gtrrpc2001
           git status
-          git remote add origin https://${{secrets.TOKEN_CODE}}@github.com/gtrrpc2001/reactwedding.git
+          git remote set-url origin https://${{secrets.TOKEN_CODE}}@github.com/gtrrpc2001/reactwedding.git
+          git branch -D gh-pages
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
