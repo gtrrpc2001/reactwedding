@@ -9,9 +9,9 @@
   
 .snowflake {
   position: absolute;
-  background: white;
-  width: 2px;
-  height: 2px;
+  background: pink;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   animation: fall 10s linear infinite, sway 3s infinite;
 }

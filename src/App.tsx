@@ -5,15 +5,13 @@ import { Main } from './main/main';
 import { MobileView } from 'react-device-detect';
 
 function App() {
-  return (  
-    <MobileView>
+  return (      
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<Main/>}/>
         </Route>
         <Route path='*' element={<Navigate to={"/"} replace={true}/>}/>
-      </Routes>
-    </MobileView>  
+      </Routes>      
   );
 }
 
