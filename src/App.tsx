@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './layout/layout';
 import { Main } from './main/main';
+import './App.css'
 
 function App() {
-<<<<<<< HEAD
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    // 여기에 데이터를 불러오는 코드를 추가하면 됩니다.
+    // 데이터를 불러온 후에는 setIsLoading(false)를 호출하여 로딩 상태를 업데이트합니다.
+    
+    setIsLoading(false);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="lds-heart">
+        <div></div>
+      </div>
+    );
+  }
+
   return (      
-=======
-  return (  
->>>>>>> f87cf1015c4d6baa25dbc64593ea94a7a1e10be4
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<Main/>}/>
         </Route>
         <Route path='*' element={<Navigate to={"/"} replace={true}/>}/>
-<<<<<<< HEAD
       </Routes>      
-=======
-      </Routes>
->>>>>>> f87cf1015c4d6baa25dbc64593ea94a7a1e10be4
   );
 }
 
