@@ -5,7 +5,6 @@ import { Main } from './main/main';
 import './App.css'
 
 function App() {
-<<<<<<< HEAD
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     // 여기에 데이터를 불러오는 코드를 추가하면 됩니다.
@@ -22,10 +21,7 @@ function App() {
     );
   }
 
-  return (      
-=======
-  return (  
->>>>>>> f285dd438a516812863dd8024f21555f224041ec
+  return ( 
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<Main/>}/>
