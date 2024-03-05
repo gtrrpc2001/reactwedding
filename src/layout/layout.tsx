@@ -1,18 +1,18 @@
+import { Link, Outlet } from "react-router-dom";
 import  Snowfall  from "../component/snowfall";
+import { Gallery } from "../gallery/gallery";
 
 export const Layout = () => {
-<<<<<<< HEAD
     
-=======
->>>>>>> f285dd438a516812863dd8024f21555f224041ec
     return (
-        <div style={{}}>
-        <Snowfall />
-        <header style={{ height: 800, width: 1000, position: 'relative' }}>
-            <div>
-
+        <div style={{width:'100vm'}}>
+            <Snowfall />
+            <div style={{width:'50vm',height:'50vm'}}>
+                <Gallery/>
             </div>
-        </header>
+            {/* <header style={{ height: 800, width: 1000 }}>                
+                
+            </header> */}
         </div>
     );
 }
