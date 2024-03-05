@@ -6,11 +6,17 @@ import './App.css'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     // 여기에 데이터를 불러오는 코드를 추가하면 됩니다.
     // 데이터를 불러온 후에는 setIsLoading(false)를 호출하여 로딩 상태를 업데이트합니다.
-
-    setIsLoading(false);
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   if (isLoading) {
@@ -21,11 +27,7 @@ function App() {
     );
   }
 
-<<<<<<< HEAD
   return (      
-=======
-  return ( 
->>>>>>> 6e41060baed619c2b3cf405ae3cc051f80c15e8f
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route path='main' element={<Main/>}/>

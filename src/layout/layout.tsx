@@ -1,21 +1,23 @@
 import { Link, Outlet } from "react-router-dom";
 import  Snowfall  from "../component/snowfall";
 import { Gallery } from "../gallery/gallery";
+import { Box } from '@mui/material'
+import image1 from '../asset/images/1.jpg'
 
 export const Layout = () => {
-<<<<<<< HEAD
     
-=======
->>>>>>> 6e41060baed619c2b3cf405ae3cc051f80c15e8f
     return (
-        <div style={{width:'100vm'}}>
+        <Box sx={{width:'auto',height:'auto'}}>
             <Snowfall />
-            <div style={{width:'50vm',height:'50vm'}}>
-                <Gallery/>
-            </div>
+            <Box sx={{display:'flex',position:'absolute',left:700,top:200}} >
+                <Box sx={{width:500,height:500,border:5,bgcolor:'background.paper'}}>
+                <img src={image1}/>
+                    {/* <Gallery/> */}
+                </Box>
+            </Box>
             {/* <header style={{ height: 800, width: 1000 }}>                
                 
             </header> */}
-        </div>
+        </Box>
     );
 }

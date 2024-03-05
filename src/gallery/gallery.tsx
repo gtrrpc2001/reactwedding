@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { imageList } from '../model/images';
 
 export const Gallery = () => {
-    const [moveIndex, setMoveIndex] = useState(-1);
+    const [moveIndex, setMoveIndex] = useState(0);
     const imageItems = imageList
 
     useEffect(() => {
@@ -11,7 +11,7 @@ export const Gallery = () => {
             if (prevIndex < imageItems.length - 1) {
               return prevIndex + 1;
             } else {
-              return -1;
+              return 0;
             }
           });
         }, 3000);
@@ -21,7 +21,7 @@ export const Gallery = () => {
       return (
         <div>
           {/* 선택된 이미지를 표시 */}
-          <img src={imageItems[moveIndex]} alt="Gallery" />
+          <img src={imageItems[moveIndex]} alt="Gallery"/>
         </div>
       );
 }
