@@ -26,13 +26,8 @@ export const Layout = () => {
     
     return (
         <Box sx={{width:width,height:height}}>            
-<<<<<<< HEAD
             <Box sx={{display:'flex',justifyContent:'center'}} >                
                 <Gallery width={width/2} height={height/3} borderRadius={15}/>                
-=======
-            <Box sx={{display:'flex',justifyContent:'center'}} >  
-                <Gallery width={width/2} height={height/3} borderRadius={15}/>  
->>>>>>> aca49dbdede39c08db88d3b4647e6bfd38f6b7e9
             </Box>
             <Main width={width} height={height*0.5}/>
             <Footer/>
