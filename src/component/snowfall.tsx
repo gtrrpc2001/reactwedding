@@ -21,14 +21,13 @@ const Snowfall:React.FC = () => {
       }, []);
 
       if (snowflakes.length > 200) {
-        while(true){
-          console.log('while 문 ' + snowflakes.length)
+        while(true){          
           snowflakes.shift();
           if (snowflakes.length < 50)
               break;
         }
       }
-      console.log(snowflakes.length)
+      
     return(
             <div className="snowfall">
                 {snowflakes}

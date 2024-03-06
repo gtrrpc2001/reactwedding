@@ -27,8 +27,7 @@ export const Layout = () => {
                 <Welcome width={width} height={height}/>
                 {/* <Gallery width={width/2} height={height/3} borderRadius={15}/>                 */}                
             </Box>
-            <div style={{width:width,height:height*0.1}}>
-            </div>            
+            <div style={{width:width,height:height*0.05}}/>            
             <Footer/>
         </Box>
     );
