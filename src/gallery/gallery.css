@@ -1,0 +1,21 @@
+.divGallery {
+    margin: 20px;
+}
+
+.divFlower{
+  text-align: center;
+}
+
+.gallery-text{
+  text-align: center;
+}
+
+.gallery{
+  margin-top: 30px;
+}
+
+.flower-image {
+  height: 11vh;
+  object-fit: contain;
+}
+  

@@ -1,3 +1,27 @@
+@font-face {
+  font-family: '1945 semibold';
+  src: url('./asset/font/Eulyoo1945-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: '1945 regular';
+  src: url('./asset/font/Eulyoo1945-Regular.ttf');
+}
+
+:root {
+  --font-semi: '1945 semibold';
+  --font-regu: '1945 regular';  
+  --menus-height: 17rem;
+}
+
+* {
+  font-family: var(--font-regu);  
+}
+
+h2 {
+  font-family: var(--font-semi);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

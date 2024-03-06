@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import './welcome.css'
 import divider from '../asset/images/divider.png'
 import { Introduction } from "../introduce/introduce";
+import dayjs from 'dayjs'
+import { afternoon, hour, min, weddingTime, yoil } from "../model/times";
 
 type props = {
     width:number
@@ -9,11 +11,11 @@ type props = {
 }
 
 export const Welcome = ({width,height}:props) => {
-    const dd = "2024.12.31 토요일 낮 12시 30분"
-    const dday = new Date(2024, 12, 31);
-    const today = new Date(2024,3,5);
-    const difference = Math.floor((+dday - +today) / (1000 * 60 * 60 * 24));
-    const ddayText =  `그 날까지 D-${difference}`;
+    const dd = `${weddingTime.replaceAll('-','.')} ${yoil}요일 ${afternoon} ${hour}시 ${min}분`
+    const dday = dayjs(weddingTime);
+    const today = dayjs();    
+    const difference = today.diff(dday, 'day');
+    const ddayText =  `그 날까지 `;
 
     return (
     <div className="welcome">
@@ -32,7 +34,7 @@ export const Welcome = ({width,height}:props) => {
       </div>
       <div className="subtitle-text">
         <p>{dd}</p>
-        <p>{ddayText}</p>                
+        <p>{ddayText}<span style={{color: '#295234', fontWeight: 'bold'}}>{`D${difference}`}</span></p>                
       </div>
       <div className="explain">
         <img src={divider} alt="line" className="line" />

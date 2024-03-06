@@ -1,4 +1,3 @@
-import  Snowfall  from "../component/snowfall";
 import { Box } from '@mui/material'
 import { useEffect, useState } from "react";
 import { Footer } from "../footer/footer";
@@ -47,7 +46,7 @@ export const Layout = () => {
         switch(true){
             case iconClickList.album :
                 return(
-                    <Gallery width={width/2} height={height/3} borderRadius={15}/>
+                    <Gallery width={width} height={height} borderRadius={15}/>
                 );
             case iconClickList.location :
                 return(
@@ -62,17 +61,17 @@ export const Layout = () => {
                     </div>
                 );
             default :
-                return(
-                    <Box sx={{display:'flex',justifyContent:'center'}} >                
-                        <Welcome width={width} height={height}/>                                   
-                    </Box>
+                return(                    
+                    <Welcome width={width} height={height}/>                                                       
                 );
         }
     }
     
     return (
-        <Box sx={{width:width,height:height}}>            
-            {pages()}
+        <Box sx={{width:width,height:height}}>
+            <Box sx={{display:'flex',justifyContent:'center'}} >
+                {pages()}
+            </Box>            
             <div style={{width:width,height:height*0.05}}/>            
             <Footer clickHandler={footerBtnHandler}/>
         </Box>

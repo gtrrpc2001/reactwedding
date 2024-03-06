@@ -1,5 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { imageList } from '../model/images';
+import flower from '../asset/images/flower.png'
+import './gallery.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 type props = {
     width:number
@@ -7,26 +11,43 @@ type props = {
     borderRadius:number
 }
 export const Gallery = ({width,height,borderRadius}:props) => {
-    const [moveIndex, setMoveIndex] = useState(0);
-    const imageItems = imageList
+    const [moveIndex, setMoveIndex] = useState(0);    
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-          setMoveIndex(prevIndex => {
-            if (prevIndex < imageItems.length - 1) {
-              return prevIndex + 1;
-            } else {
-              return 0;
-            }
-          });
-        }, 3000);
-        return () => clearInterval(timer);
-      }, [imageItems.length]);
+    const handleChange = (index:number) => {
+        setMoveIndex(index);
+    }
+
+    const renderSliders = imageList.map(m => (
+        <div key={m.id}>
+            <img src={m.url} alt={m.alt} style={{width:`${width * 0.7}px`,height:`${height * 0.6}px`,borderRadius:borderRadius}}/>
+        </div>
+    ))
 
       return (
-        <div>
-          {/* 선택된 이미지를 표시 */}
-          <img src={imageItems[moveIndex]} alt="Gallery" style={{width:`${width}px`,height:`${height}px`,borderRadius:borderRadius}}/>
+        <div className='divGallery'>          
+          <div className='divFlower'>
+            <img className='flower-image' src={flower}/>                        
+          </div>          
+          <div className='gallery-text'>
+            <h2 style={{color: '#295234', fontWeight: 'bold', fontSize: 17,marginTop:0}}>            
+                {'Photo Gallery'}
+            </h2>
+          </div>
+          <div className='gallery'>            
+            <Carousel
+            showArrows={false}
+            autoPlay={true}
+            infiniteLoop={true}
+            showThumbs={false}
+            interval={3000}
+            emulateTouch={true}
+            showIndicators={false}
+            selectedItem={moveIndex}
+            onChange={handleChange}
+            >
+                {renderSliders}
+            </Carousel>
+          </div>
         </div>
       );
 }
