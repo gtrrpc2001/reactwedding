@@ -19,7 +19,7 @@ export const Gallery = ({width,height,borderRadius}:props) => {
 
     const renderSliders = imageList.map(m => (
         <div key={m.id}>
-            <img src={m.url} alt={m.alt} style={{width:`${width * 0.7}px`,height:`${height * 0.6}px`,borderRadius:borderRadius}}/>
+            <img src={m.url} alt={m.alt} style={{width:`${width * 0.8}px`,height:`${height * 0.6}px`,borderRadius:borderRadius}}/>
         </div>
     ))
 
@@ -34,7 +34,7 @@ export const Gallery = ({width,height,borderRadius}:props) => {
             </h2>
           </div>
           <div className='gallery'>
-            <div style={{width:width * 0.7, height:height * 0.6, objectFit:'cover'}}>              
+            <div style={{width:width * 0.8, height:height * 0.6, objectFit:'cover'}}>              
               <Carousel
               showArrows={false}
               autoPlay={true}
