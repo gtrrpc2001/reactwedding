@@ -22,7 +22,7 @@ const Snowfall:React.FC = () => {
         return () => {
           clearInterval(interval);
         };
-      }, [snowflakes]);
+      }, []);
 
     return(
             <div className="snowfall">
