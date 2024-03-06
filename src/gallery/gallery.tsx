@@ -33,20 +33,22 @@ export const Gallery = ({width,height,borderRadius}:props) => {
                 {'Photo Gallery'}
             </h2>
           </div>
-          <div className='gallery'>            
-            <Carousel
-            showArrows={false}
-            autoPlay={true}
-            infiniteLoop={true}
-            showThumbs={false}
-            interval={3000}
-            emulateTouch={true}
-            showIndicators={false}
-            selectedItem={moveIndex}
-            onChange={handleChange}
-            >
-                {renderSliders}
-            </Carousel>
+          <div className='gallery'>
+            <div style={{width:width * 0.7, height:height * 0.6}}>              
+              <Carousel
+              showArrows={false}
+              autoPlay={true}
+              infiniteLoop={true}
+              showThumbs={false}
+              interval={3000}
+              emulateTouch={true}
+              showIndicators={false}
+              selectedItem={moveIndex}
+              onChange={handleChange}            
+              >
+                  {renderSliders}
+              </Carousel>
+            </div>
           </div>
         </div>
       );
