@@ -24,16 +24,16 @@ export const CongratulationGift = ({width,height}:props) => {
     );    
 
     return (
-        <div style={{width:width*0.8,height:height*0.8}}> 
-            <div style={{marginTop:20,height:height*0.4,textAlign:'center'}}>
+        <div style={{width:width*0.8,height:height*0.9}}> 
+            <div style={{marginTop:20,height:height*0.5}}>
+
+            </div>
+            <div style={{marginTop:20,height:height*0.3,textAlign:'center'}}>
               <h2 style={{ color: '#295234', fontWeight: "bold", fontSize: 20 }}>신랑 신부에게 마음 전하기</h2>
               {buildButton('신랑 이충헌', '카카오뱅크 3333-24-8680799')}
               {buildButton('신부 이알레이나', '하나은행 702-910962-53707')}
             </div>
-            <div style={{height:height*0.35}}>
-
-            </div>
-            <div style={{height:height*0.05}}>
+            <div style={{height:height*0.05,display:'flex',justifyContent:'center',alignItems:'end'}}>
                 <CreditCard />      
             </div>
         </div>
