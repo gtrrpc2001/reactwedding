@@ -13,11 +13,10 @@ const Snowfall:React.FC = () => {
         const interval = setInterval(() => {
           const newSnowflake = <div key={Math.random()} className="snowflake" style={{left: Math.random() * window.innerWidth, animationDuration: `${Math.random() * 3 + 2}s`}} />;
           setSnowflakes((snowflakes) => [...snowflakes, newSnowflake]);
-    
           if (snowflakes.length > 200) {
             snowflakes.shift();
           }
-        }, 100);
+        }, 1000);
     
         return () => {
           clearInterval(interval);
