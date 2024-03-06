@@ -4,6 +4,8 @@ import { Footer } from "../footer/footer";
 import { Welcome } from "../welcome/welcome";
 import { iconClick } from "../model/icons";
 import { Gallery } from "../gallery/gallery";
+import {Map} from "../map/map"
+import { CongratulationGift } from '../congratulationGift/congratulationGift';
 
 export const Layout = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -50,15 +52,15 @@ export const Layout = () => {
                 );
             case iconClickList.location :
                 return(
-                    <div>
-                        
-                    </div>
+                    <>
+                      <Map width={width} height={height}/>
+                    </>
                 );
             case iconClickList.payment:
                 return(
-                    <div>
-
-                    </div>
+                    <>
+                        <CongratulationGift width={width} height={height}/>
+                    </>
                 );
             default :
                 return(                    
