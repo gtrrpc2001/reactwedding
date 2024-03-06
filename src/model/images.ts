@@ -27,3 +27,4 @@ export const imageList = [
     image12,
     image13
 ]
+

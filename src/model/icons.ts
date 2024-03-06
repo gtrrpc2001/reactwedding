@@ -9,3 +9,17 @@ export const iconList = [
     location,
     payment
 ]
+export const iconID = [
+    "invitation",
+    "album",
+    "location",
+    "payment"
+]
+
+
+export interface iconClick{
+    invitation:boolean
+    album:boolean
+    location:boolean
+    payment:boolean
+}
