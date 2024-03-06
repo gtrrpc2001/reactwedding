@@ -1,0 +1,29 @@
+.introduction {
+    margin: 20px;    
+  }
+  
+  .hand-image {
+    height: 10vh;
+    object-fit: contain;
+  }
+  
+  .introduction-text {
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .parents {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .heart {
+    color: red;
+  }

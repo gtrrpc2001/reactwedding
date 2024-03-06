@@ -30,3 +30,13 @@
     text-align: center;
     font-size: 15px;
   }
+
+  .explain {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .line{
+    width: 100%;
+  }
