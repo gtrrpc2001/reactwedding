@@ -34,7 +34,7 @@ export const Gallery = ({width,height,borderRadius}:props) => {
             </h2>
           </div>
           <div className='gallery'>
-            <div style={{width:width * 0.7, height:height * 0.6}}>              
+            <div style={{width:width * 0.7, height:height * 0.6, objectFit:'cover'}}>              
               <Carousel
               showArrows={false}
               autoPlay={true}
