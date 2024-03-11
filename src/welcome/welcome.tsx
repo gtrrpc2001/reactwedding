@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './welcome.css'
 import divider from '../asset/images/divider.png'
+import water from '../asset/images/water.jpg'
 import { Introduction } from "../introduce/introduce";
 import dayjs from 'dayjs'
 import { afternoon, hour, min, weddingTime, yoil } from "../model/times";
@@ -20,7 +21,7 @@ export const Welcome = ({width,height}:props) => {
     return (
     <div className="welcome">
       <div className="image-container" style={{ height: height * 0.45 }}>
-        <img src="./water.jpg" alt="Background" className="background-image" />        
+        <img src={water} alt="Background" className="background-image" />        
         <div className="title-text">
           함께하는 첫 시작
           <br />

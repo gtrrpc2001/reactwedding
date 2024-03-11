@@ -26,7 +26,7 @@ export const Gallery = ({width,height,borderRadius}:props) => {
       return (
         <div className='divGallery'>          
           <div className='divFlower'>
-            <img className='flower-image' src={flower}/>                        
+            <img className='flower-image' src={flower} alt='flower'/>                        
           </div>          
           <div className='gallery-text'>
             <h2 style={{color: '#295234', fontWeight: 'bold', fontSize: 17,marginTop:0}}>            
