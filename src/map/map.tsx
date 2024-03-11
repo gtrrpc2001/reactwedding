@@ -14,6 +14,7 @@ export const Map = ({width,height}:props) => {
                 <h2 style={{ color: 'rgb(41,82,56)', fontWeight: 'bold', fontSize: '20px' }}>오시는 길</h2>
                 <div style={{marginTop: '20px', width:width*0.8,height:height*0.7,textAlign:'center'}}>                
                     <iframe
+                    title='map'
                     width={"100%"}
                     height={"100%"}
                     src={`https://www.google.com/maps/embed/v1/place?key=${googleKey}&q=${locationName}`}
