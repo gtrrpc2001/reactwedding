@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Button } from '@mui/material'
 import { CreditCard } from "../creditcard/creditCard";
