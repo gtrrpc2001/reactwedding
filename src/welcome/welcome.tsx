@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import './welcome.css'
 import divider from '../asset/images/divider.png'
 import { Introduction } from "../introduce/introduce";
