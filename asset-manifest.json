@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/reactwedding/static/css/main.f09708a8.css",
+    "main.js": "/reactwedding/static/js/main.589e6835.js",
+    "static/js/453.a1bbb3f1.chunk.js": "/reactwedding/static/js/453.a1bbb3f1.chunk.js",
+    "static/media/Eulyoo1945-Regular.ttf": "/reactwedding/static/media/Eulyoo1945-Regular.22154b183d5ef3de225d.ttf",
+    "static/media/Eulyoo1945-SemiBold.ttf": "/reactwedding/static/media/Eulyoo1945-SemiBold.ff2deaf53813a9b79a6a.ttf",
+    "static/media/water.jpg": "/reactwedding/static/media/water.8ebc2ad495d96be67216.jpg",
+    "static/media/9.jpg": "/reactwedding/static/media/9.14fe56058f1a18f5255c.jpg",
+    "static/media/13.jpg": "/reactwedding/static/media/13.f5232e1b897fabf13e5d.jpg",
+    "static/media/8.jpg": "/reactwedding/static/media/8.69e7de8eb853a12808f7.jpg",
+    "static/media/12.jpg": "/reactwedding/static/media/12.88473ee83c5b8a9a6a91.jpg",
+    "static/media/4.jpg": "/reactwedding/static/media/4.9d19e8a39962064dfef5.jpg",
+    "static/media/11.jpg": "/reactwedding/static/media/11.22cbd87c469b51e6f6e8.jpg",
+    "static/media/3.jpg": "/reactwedding/static/media/3.fe04217e90f4e0c0cd1f.jpg",
+    "static/media/10.jpg": "/reactwedding/static/media/10.f0a83b9752df9cfcff5f.jpg",
+    "static/media/2.jpg": "/reactwedding/static/media/2.d3f5f80495b736baf12e.jpg",
+    "static/media/7.jpg": "/reactwedding/static/media/7.7bc9a50de8123189eb28.jpg",
+    "static/media/5.jpg": "/reactwedding/static/media/5.eb60db64f2504cf50df8.jpg",
+    "static/media/hand.png": "/reactwedding/static/media/hand.f93c97fa0bb7977c898c.png",
+    "static/media/1.jpg": "/reactwedding/static/media/1.634de87a58148906a9a9.jpg",
+    "static/media/flower.png": "/reactwedding/static/media/flower.4009971801338edf2121.png",
+    "static/media/6.jpg": "/reactwedding/static/media/6.cf55a76625b3b5393fc1.jpg",
+    "index.html": "/reactwedding/index.html",
+    "main.f09708a8.css.map": "/reactwedding/static/css/main.f09708a8.css.map",
+    "main.589e6835.js.map": "/reactwedding/static/js/main.589e6835.js.map",
+    "453.a1bbb3f1.chunk.js.map": "/reactwedding/static/js/453.a1bbb3f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f09708a8.css",
+    "static/js/main.589e6835.js"
+  ]
+}
